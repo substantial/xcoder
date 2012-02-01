@@ -97,3 +97,5 @@ module Xcode
     projects
   end
 end
+
+require 'xcoder_plugins'
