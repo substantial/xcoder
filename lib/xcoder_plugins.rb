@@ -22,6 +22,7 @@ module Xcode
 
     def load_plugin_failed(name, exception)
       warn "Error loading plugin '#{name}'"
+      warn "#{exception}"
       false
     end
 
