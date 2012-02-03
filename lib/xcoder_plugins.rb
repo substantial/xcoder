@@ -28,7 +28,8 @@ module Xcode
 
     def load_plugin(name)
       name = translate_plugin_name(name)
-      puts "Loading plugin '#{name}'..."
+      # TODO: change to be when the xcoder has been configured to DEBUG information
+      #puts "Loading plugin '#{name}'..."
       require name
       true
     rescue LoadError => e
